@@ -48,13 +48,15 @@ void testApp::setup(){
     myPiano.setup();
     
     //scale
-    int scaleDegrees[7] = { 0, 2, 3, 5, 7, 8, 11 };
+    //int scaleDegrees[7] = { 0, 2, 3, 5, 7, 8, 11 };
+    int scaleDegrees[7] = { 60, 62, 63, 65, 67, 68, 71 };
+
     majorScale.assign(scaleDegrees, scaleDegrees + 7);
     
     
     for (int i = 0; i < majorScale.size(); i++) {
         
-        cout << "scale degree: " << i << majorScale[i] << endl;
+        cout << "scale degree" + ofToString(i) + " : " << majorScale[i] << endl;
         
     }
     
